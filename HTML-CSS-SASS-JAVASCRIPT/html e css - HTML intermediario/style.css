@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.cabecalho {
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.logo {
+    width: 10%;
+}
+
+.container {
+    display: flex;
+    padding: 30px;
+}
+
+.navbar {
+    width: 30%;
+    background: white;
+    padding: 30px;
+    
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: white;
+    background: blue;
+    padding: 15px 40px;
+    border-radius: 20px 0;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 8px #000;
+}
+
+.navbar li a:hover {
+    transform: scale(1.1);
+    background: darkorange;
+    transition: 0.3s;
+}
+
+.content {
+    width: 70%;
+    background: #eeeeee;
+    padding: 30px;
+    border-radius: 40px 0;
+    box-shadow: 0 0 8px rgb(85, 81, 81);
+}
+
+.quemsomos {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 0 0 6px rgb(85, 81, 81);
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    width: 30%;
+    padding: 10px 25px;
+    border-radius: 15px 0;
+    border: none;
+}
+
+.enviar {
+    width: 30%;
+    padding: 15px 0;
+    background: orange;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px 0;
+    color: #ffffff;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    transform: scale(1.1);
+    background: darkorange;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.video {
+    text-align: center;
+}
+
+.footer {
+    color: white;
+    background-color: #ea1b2a;
+    text-align: center;
+    padding: 40px;
+}
+
+@media (max-width: 320px) {
+    .logo {
+        width: 100px;
+    }
+
+    .cabecalho {
+        background: #ea1b2a;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        margin: 0 20px;
+        
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}

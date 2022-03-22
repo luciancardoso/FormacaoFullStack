@@ -1,0 +1,34 @@
+
+::selection {
+    color: blue;
+    background: black;
+}
+
+p::first-line {
+    color: yellow;
+}
+
+p::first-letter {
+    color: red;
+    font-size: 50px;
+}
+
+h1::before {
+    background: url("https://image.flaticon.com/icons/png/512/178/178158.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    content: "";
+    margin-right: 30px;
+}
+
+h1::after {
+    background: url("https://image.flaticon.com/icons/png/512/178/178158.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    content: "";
+    margin-right: 30px;
+}

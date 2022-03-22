@@ -1,0 +1,34 @@
+h1 {
+    text-shadow: 2px 2px 20px red;
+}
+
+p {
+    font-size: 30px;
+    color: green;
+    text-align: justify;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-indent: 50px;
+    word-spacing: 20px;
+    line-height: 50px;
+}
+
+a {
+    text-decoration: line-through;
+    letter-spacing: 1.5px;
+    padding: 15px 25px;
+    background: red;
+    border-radius: 20px;
+    border: none;
+    color: aliceblue;
+    transition: 0.3s all;
+    cursor: crosshair;
+}
+
+a:hover {
+    background: darkred;
+    transform: scale(1.2);
+    transition: 0.3s;
+}

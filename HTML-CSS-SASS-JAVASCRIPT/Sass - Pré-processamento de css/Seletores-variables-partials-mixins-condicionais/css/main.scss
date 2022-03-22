@@ -1,0 +1,80 @@
+// aqui são os Partials o arquivo _base.scss primeiro colocar variaves pra n da erro
+@import 'variables';
+@import 'base';
+@import 'mixin';
+@import 'extends';
+
+
+.container {
+
+    display: flex;
+    justify-content: space-around;
+
+    .box {
+        width: 30%;
+        background-color: white;
+        color: black;
+        border-radius: 8px;
+        padding: 20px;
+
+        /* esse & comercial significa que e um irmão da classe box e não filho */
+        &.active {
+            background: rebeccapurple;
+        }
+
+        h2 {
+            font-family: $font-primary;
+            font-size: 22px;
+            margin: 10px 20px 30px 20px;
+        }
+
+        p {
+            font-family: $font-secondary;
+            font-size: 18px;
+
+            /* classe feita de baixo do link de ancora para fazer o efeito de sumir  */
+            &.hidden {
+                display: none;
+            }
+        }
+
+        ul {
+            @include reset-list();
+        }
+
+        a {
+            color: green;
+
+            /* pra seletores temos o & também para hover e outros. */
+            &:hover {
+                color: yellow;
+
+                /* + eu to pegando o elemento irmão para aparecer o efeito da classe */
+                & + p.hidden {
+                    display: block;
+                }
+            }
+        }
+
+        .success{
+            @extend %box-alert;
+            @include bg-effect(success);
+            // background-color: green;
+        }
+    
+        .warning{
+            @extend %box-alert;
+            @include bg-effect(warning);
+            // background-color: yellow;
+        }
+    
+        .danger{
+            @extend %box-alert;
+            @include bg-effect(danger);
+            // background-color: red;
+        }
+        
+    }
+
+    
+}

@@ -1,0 +1,33 @@
+
+.container {
+    background: gray;
+    
+    display: flex;
+    flex-direction: row;
+    /* flex-warp ele quebra a linha, faz com que os itens que não caibam na tela quebrem pra linha de baixo. */
+    flex-wrap: wrap;
+
+    /* essa usa as duas propriedades flex-direction e flex-wrap */
+    /* flex-flow: row nowrap; */
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #listaClientes > li {
+            margin-bottom: 30px;
+        }
+
+        #listaProdutos > li {
+            margin-bottom: 30px;
+        }
+
+        #listaPessoasTop > li {
+            margin-bottom: 30px;
+        }
+
+        #pessoas > li {
+            margin-bottom: 30px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <ul id="listaClientes">
+        <!-- Essa li so foi usanda como base para estruturar o javascript no for -->
+        <li>
+            <b>Nome:</b> Lucian <br>
+            <b>Idade:</b> 27 <br>
+            <b>Linguagens</b><br>
+            <ul>
+                <li>javascript</li>
+                <li>python</li>
+                <li>php</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul id="listaProdutos">
+        <li>
+            <b>Produto:</b> Telefone<br>
+            <b>Marca:</b> Apple Inc.<br>
+            <b>Descrição:</b> Iphone XR 64GB iOS 15. <br>
+            <b>Acessórios:</b> <br>
+            <ul>
+                <li>Carregador Fast 4.0</li>
+                <li>Adesivo Apple</li>
+                <li>Manual de Instruções</li>
+                <li>Garatia de 5 anos.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <label>Selecione o Ano</label>
+    <select id="ano">
+        <option>-- SELECIONE --</option>
+    </select>
+    <br><br>
+
+    <ul id="listaPessoasTop"></ul>
+    <br>
+
+    <ul id="pessoas"></ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>

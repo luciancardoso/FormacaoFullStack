@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <img src="img/logoPringles.jpg" class="logo" alt="Logo Pringles">
+    </header>
+
+    <section class="container">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="quem-somos.html">Quem somos</a>
+                </li>
+                <li>
+                    <a href="produtos.html">Produtos</a>
+                </li>
+                <li>
+                    <a href="servicos.html">Serviços</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <article class="content">
+
+            <img src="img/pringlesAnimation.gif" class="quemsomos" alt="Quem somos">
+
+            <br><br>
+            <h1>Formulário de Contato</h1>
+            
+            <form action="" method="POST">
+                <label for="nome">Nome completo: <input type="text" name="nome" id="nome" class="input-padrao" placeholder="Seu nome"></label>
+                <label for="telefone">Telefone: <input type="tel" name="telefone" id="telefone" class="input-padrao" placeholder="(92) 99999-9999"></label>
+                <label for="email">E-mail: <input type="email" name="email" id="email" class="input-padrao" placeholder="seuemail@email"></label>
+
+                <label for="assunto">Assunto: </label>
+                <textarea name="assunto" class="input-padrao" id="assunto" cols="70" rows="10" placeholder="Digite seu texto"></textarea>
+
+                <input type="submit" class="enviar" value="Enviar">
+
+            </form>
+
+        </article>
+    </section>
+
+    <footer class="footer">
+        <img src="img/logoPringles.jpg" class="logo" alt="">
+        <p> &COPY; Todos os direitos reservados - 2021</p>
+    </footer>
+
+</body>
+</html>

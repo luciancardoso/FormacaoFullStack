@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/assets/img/background.png');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+}
+
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.input-padrao {
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.p {
+    font-weight: 300;
+}
+
+.enviar {
+    background: #4c90e5 ;
+    padding: 20px 25px;
+    width: 40%;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin: 26px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.enviar:hover {
+    background: blue;
+    transition: 0.3s all;
+}

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.container .box .success, .container .box .warning, .container .box .danger {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .box {
+  width: 30%;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 20px;
+  /* esse & comercial significa que e um irmão da classe box e não filho */
+}
+
+.container .box.active {
+  background: rebeccapurple;
+}
+
+.container .box h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 22px;
+  margin: 10px 20px 30px 20px;
+}
+
+.container .box p {
+  font-family: "Verdana", sans-serif;
+  font-size: 18px;
+  /* classe feita de baixo do link de ancora para fazer o efeito de sumir  */
+}
+
+.container .box p.hidden {
+  display: none;
+}
+
+.container .box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container .box a {
+  color: green;
+  /* pra seletores temos o & também para hover e outros. */
+}
+
+.container .box a:hover {
+  color: yellow;
+  /* + eu to pegando o elemento irmão para aparecer o efeito da classe */
+}
+
+.container .box a:hover + p.hidden {
+  display: block;
+}
+
+.container .box .success {
+  background-color: green;
+}
+
+.container .box .warning {
+  color: black;
+  background-color: yellow;
+}
+
+.container .box .danger {
+  background-color: red;
+}
+/*# sourceMappingURL=main.css.map */

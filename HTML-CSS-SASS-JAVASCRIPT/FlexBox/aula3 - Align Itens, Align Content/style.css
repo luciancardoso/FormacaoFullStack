@@ -1,0 +1,39 @@
+
+.container {
+    background: silver;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    /* o align-item vai fazer o aliamento dele na horizontal e o align-content vai fazer o aliamento deles na vertical */
+    align-content: center;
+
+    /* o align-items só vai funcionar quando o flex-direction estiver row */
+    align-items: center;
+
+    height: 600px;
+
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}

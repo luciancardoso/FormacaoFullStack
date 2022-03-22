@@ -1,0 +1,40 @@
+
+.container {
+    background: silver;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    height: 600px;
+
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    flex-grow: 1;
+    align-self: center;
+    background-color: red;
+}
+
+.blue{
+    flex-grow: 1;
+    align-self: flex-end;
+    background-color: blue;
+}
+
+.yellow {
+    flex-grow: 2;
+    background-color: yellow;
+}
+
+.green {
+    flex-grow: 2;
+    align-self: center;
+    background-color: green;
+}

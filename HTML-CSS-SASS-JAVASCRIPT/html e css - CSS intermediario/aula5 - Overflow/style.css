@@ -1,0 +1,9 @@
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    overflow: scroll;
+    overflow-x: hidden; /* esconda tudo do eixo x da barra de rolagem - se usar Auto ele 
+    identifica se precisa esconder a barra de rolagem*/
+}

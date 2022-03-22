@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %> 
+</head>
+<body>
+    
+    <%- include('partials/header.ejs') %> 
+
+    <section class="content">
+        <h1>Confira os Posts em Alta!</h1>
+
+        <div class="posts">
+            <% posts.forEach((item) => { %>
+                <div class="post">
+                    <h3><%= item.title %> </h3>
+                    <p><%= item.text %> </p>
+                    <% for( let index = 0; index < item.stars; index++ ) { %>
+                        <img src="https://cdn.picpng.com/star/star-icon-vector-flat-black-47756.png" width="20">
+                    <% } %>
+                </div>
+            <% }) %> 
+        </div>
+    </section>
+
+    <%- include('partials/footer.ejs') %> 
+    <%- include('partials/foot.ejs') %> 
+
+</body>
+</html>

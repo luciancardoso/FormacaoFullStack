@@ -1,0 +1,15 @@
+body {
+    background: url("https://images.unsplash.com/photo-1539721972319-f0e80a00d424?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+}
+
+
+ul {
+    background: gray;
+    padding: 30px;
+    opacity: 0.4; /* 1 opacidade normal, 0 - transparente , de 0.1 a 0.9 e o nivel de opacidade do elemento */
+}
+
+ul li {
+    display: inline;
+    margin: 20px;
+}
