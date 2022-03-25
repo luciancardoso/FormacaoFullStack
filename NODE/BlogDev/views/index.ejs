@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %> 
+</head>
+<body>
+
+    <%- include('partials/header.ejs') %> 
+    
+    <section class="principal">
+        <h1 class="titulo-principal">O que é front-end e back-end?</h1>
+        
+        <img src="https://www.alura.com.br/artigos/assets/o-que-e-front-end-e-back-end/o-que-e-front-end-e-back-end.jpg" width="700" alt=""> 
+
+        </br></br>
+        <div class="posts">
+
+            <% posts.forEach((item) => { %>
+                <h2><%= item.title %> </h2>
+                <p><%= item.text %> </p>
+            <% }) %>
+
+        </div>
+    </section>
+
+    <%- include('partials/footer.ejs') %> 
+    <%- include('partials/foot.ejs') %> 
+
+</body>
+</html>

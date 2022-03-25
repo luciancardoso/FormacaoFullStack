@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %> 
+</head>
+<body>
+
+    <%- include('partials/header.ejs') %> 
+    
+    <section class="principal">
+        <h1 class="titulo-principal">Central de Conteúdos</h1>
+        <h3 class="titulo-principal">Atigos Blog</h3>
+
+        <div class="posts">
+            <% posts.forEach((item) => { %>
+                <h2><%= item.title %> </h2>
+                <p><%= item.text %> </p>
+                <% for( let index = 0; index < item.stars; index++ ) { %>
+                    <img src="https://freepikpsd.com/file/2019/10/gold-star-icon-png-1-Transparent-Images-Free.png" width="20" alt="">
+                <% } %>
+            <% }) %>
+
+        </div>
+        
+    </section>
+
+    <%- include('partials/footer.ejs') %> 
+    <%- include('partials/foot.ejs') %> 
+
+</body>
+</html>

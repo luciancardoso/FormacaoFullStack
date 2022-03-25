@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %> 
+</head>
+<body>
+
+    <%- include('partials/header.ejs') %> 
+    
+    <section class="principal">
+        <h1 class="titulo-principal">Cadastrar Novo Post</h1>
+
+        <img class="imagemfooter" src="https://static.wixstatic.com/media/e51b9d_ac351bca6bab4a7eb4ca4f8c629d6419~mv2.jpg/v1/fill/w_1000,h_800,al_c,q_90/e51b9d_ac351bca6bab4a7eb4ca4f8c629d6419~mv2.jpg" alt="">
+        
+        <% if (cadastrado) { %>
+            cadastro realizado com sucesso !
+        <% } %>
+
+        <form action="/salvar-post" method="post">
+            <div>
+                <label>Título: </label>
+                <input class="input-padrao" type="text" name="titulo" placeholder="Titulo do Artigo" required>
+            </div>
+            <div>
+                <label>Autor: </label>
+                <input class="input-padrao" type="text" name="nome" placeholder="Nome do Autor" required>
+            </div>
+            <div>
+                <label>Texto: </label>
+                <textarea class="input-padrao" name="texto" cols="30" rows="10" placeholder="Escreva seu Artigo" required></textarea>
+            </div>
+            <div>
+                <button class="enviar" type="submit">Cadastrar</button>
+            </div>
+
+        </form>
+
+    </section>
+
+    <%- include('partials/footer.ejs') %> 
+    <%- include('partials/foot.ejs') %> 
+
+</body>
+</html>
