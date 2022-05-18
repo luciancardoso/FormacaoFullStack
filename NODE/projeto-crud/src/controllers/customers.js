@@ -5,7 +5,7 @@ const defaultTitle = 'Cadastro de Clientes'
 
 function index(req, res){
     res.render('register', {
-        title: 'Cadastro de Clientes'
+        title: defaultTitle
     })
 }
 
@@ -28,7 +28,7 @@ async function add(req, res) {
 
     register.save();
     res.render('register', {
-        title: 'Cadastro de Clientes',
+        title: defaultTitle,
         message: 'Cadastro realizado com sucesso'
     })
     // res.send('cadastro realizado');
