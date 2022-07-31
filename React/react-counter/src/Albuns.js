@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Template from "./Template";
+// import Template from "./Template";
 import Loading from "./Loading";
 
 // import loadingImg from './imagens/loading.gif';
@@ -20,7 +20,7 @@ const Albuns = () => {
     }, [])
 
     return (
-        <Template title="Álbuns">
+        <>
             {/* <Header title="Àlbuns" /> */}
 
             <Loading visible={isLoading} />
@@ -38,7 +38,7 @@ const Albuns = () => {
                     )
                 })
             }
-        </Template>
+        </>
     )
 }
 

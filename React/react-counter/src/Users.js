@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 // import Header from "./Header";
-import Template from "./Template";
+// import Template from "./Template";
 
 // import imagemLoad from './imagens/loading.gif';
 import Loading from "./Loading";
@@ -22,7 +22,7 @@ const Users = () => {
 
 
     return(
-        <Template title="Usuários">
+        <>
             {/* <Header title="Usuários" /> */}
 
             <Loading visible={isLoading} />
@@ -42,7 +42,7 @@ const Users = () => {
                     )
                 })
             }
-        </Template>
+        </>
     )
 }
 
