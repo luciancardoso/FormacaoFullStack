@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 // import Template from "./Template";
-import Loading from "./Loading";
+import Loading from "../components/Loading";
 
 // import loadingImg from './imagens/loading.gif';
 

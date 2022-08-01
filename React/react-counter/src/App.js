@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import Template from "./Template";
-import Albuns from "./Albuns";
-import Counter from "./Counter";
-import Users from "./Users";
+import Template from "./templates/Template";
+import Albuns from "./pages/Albuns";
+import Counter from "./pages/Counter";
+import Users from "./pages/Users";
 
 const defaultPage = 'albuns';
 

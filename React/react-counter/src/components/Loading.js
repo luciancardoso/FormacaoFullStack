@@ -1,5 +1,5 @@
 import React from "react";
-import imagemLoad from './imagens/loading.gif';
+import imagemLoad from '../imagens/loading.gif';
 
 const Loading = ({ visible }) => {
     return (

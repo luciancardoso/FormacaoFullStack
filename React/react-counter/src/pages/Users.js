@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // import Template from "./Template";
 
 // import imagemLoad from './imagens/loading.gif';
-import Loading from "./Loading";
+import Loading from "../components/Loading";
 
 const Users = () => {
 
