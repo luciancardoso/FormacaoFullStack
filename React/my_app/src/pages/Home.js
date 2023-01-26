@@ -1,8 +1,9 @@
-import Header from "../partials/Header/Header"
+// import Header from "../partials/Header/Header"
 
 const Home = () => {
     return (
-        <Header />
+        // <Header />
+        <h1>Home</h1>
     )
 }
 
