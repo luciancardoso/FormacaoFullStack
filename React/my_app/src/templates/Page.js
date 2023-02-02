@@ -11,10 +11,12 @@ const Page = ({ title, Component }) => {
     const classes = useStyles()
 
     return(
-        <Typography variant='h3'>
-            {title}
+        <>
+            <Typography variant='h3'>
+                {title}
+            </Typography>
             <Component />
-        </Typography>
+        </>
     )
 }
 
