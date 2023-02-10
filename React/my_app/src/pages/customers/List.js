@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
-import CustomersCard from '../components/CustomersCard'
+import CustomersCard from '../../components/CustomersCard'
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const Customers = () => {
+const List = () => {
 
     const classes = useStyles();
 
@@ -60,4 +60,4 @@ const Customers = () => {
     )
 }
 
-export default Customers
+export default List
