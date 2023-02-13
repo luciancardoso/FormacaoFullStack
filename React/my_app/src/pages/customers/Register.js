@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+import { TextField, Button } from '@material-ui/core';
 import axios from 'axios';
+
+import Toasty from '../../components/Toasty';
 
 const useStyles = makeStyles((theme) => ({
     wrapper: {
@@ -12,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Register = () => {
     const classes = useStyles()
+
+    const [openToast, setOpenToast] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
     const [form, setForm] = useState({
         name: {
@@ -36,6 +40,8 @@ const Register = () => {
     }
 
     const handleRegisterButton = () => {
+        setIsLoading(true)
+
         let hasError = false
 
         let newFormState = {
@@ -70,7 +76,9 @@ const Register = () => {
             name: form.name.value,
             job: form.job.value,
         }).then((response) => {
-            console.log('OK', response)
+            // console.log('OK', response)
+            setOpenToast(true)
+            setIsLoading(true)
         })
 
     }
@@ -80,7 +88,7 @@ const Register = () => {
             <div className={classes.wrapper}>
                 <TextField 
                     error={form.name.error}
-                    helperText={form.name.error ? form.job.helperText : ''}
+                    helperText={form.name.error ? form.name.helperText : ''}
                     label="Digite seu Nome" 
                     variant="outlined" 
                     name="name"
@@ -100,10 +108,18 @@ const Register = () => {
                 />
             </div>
             <div className={classes.wrapper}>
-                <Button variant="contained" color="primary" onClick={handleRegisterButton}>
-                    Cadastrar
+                <Button variant="contained" color="primary" onClick={handleRegisterButton} disabled={isLoading}>
+                    {
+                        isLoading ? 'Aguarde...' : 'Cadastrar'
+                    }
                 </Button>
             </div>
+            <Toasty 
+                open={openToast} 
+                severity="success"
+                text="Cadastro realizado com Sucesso!"
+                onClose={() => setOpenToast(false)} 
+            />
         </>
     )
 }
