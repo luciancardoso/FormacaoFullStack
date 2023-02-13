@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const CustomersCard = ({ id, name, lastname, email, avatar, className, onRemoveCustomer }) => {
+const CustomersCard = ({ id, name, lastname, email, avatar, className, onRemoveCustomer, onEditCustomer }) => {
   const classes = useStyles();
 
   const [modalOpen, setOpenModal] = useState(false)  
@@ -40,6 +40,10 @@ const CustomersCard = ({ id, name, lastname, email, avatar, className, onRemoveC
     handleToggleModal()
   }
 
+  const handleEditCustomer = id => {
+    onEditCustomer(id)
+  }
+
   return (
     <>
       <Card className={classNames(className ,classes.root)}>
@@ -53,7 +57,7 @@ const CustomersCard = ({ id, name, lastname, email, avatar, className, onRemoveC
           subheader={email}
         />
         <CardActions disableSpacing>
-          <IconButton aria-label="Editar Cadastro">
+          <IconButton aria-label="Editar Cadastro" onClick={() => handleEditCustomer(id)}>
             <EditIcon />
           </IconButton>
           <IconButton aria-label="Remover Cadastro" onClick={handleRemoveCustomer}>
